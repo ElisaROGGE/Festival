@@ -139,7 +139,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     <div class="tl-content">
       <h1>Around the World</h1>
-      <p>Une année exceptionnelle et pleine de défis a appelé à de nouvelles aventures à explorer… Lors de l'annulation de Tomorrowland Winter en France et de l'édition d'été en Belgique en raison de COVID-19, Neon Festival a fait un saut dans le merveilleux monde numérique, ouvrant les portes de l'avenir sur le l'île magique de Papilionem. </p>
+      <p>Une année exceptionnelle et pleine de défis a appelé à de nouvelles aventures à explorer… Lors de l'annulation de Neon Festival Winter en France et de l'édition d'été en Belgique en raison du COVID-19, Neon Festival a fait un saut dans le merveilleux monde numérique. </p>
     </div>
 
   </div>
@@ -184,7 +184,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     <div class="tl-content">
       <h1 class="f3 text--accent ttu">Amicorum Spectaculum</h1>
-      <p>En 2017 un rassemblement magique des People of Tomorrow a eu lieu pendant 2 week-ends. Les 21-22-23 juillet et 28-29-30 juillet, plus de 400 000 amis ont découvert "Amicorum Spectaculum". Un spectacle qu'on voit rarement, un rassemblement de talents qui vous a émerveillé.</p>
+      <p>En 2017 un rassemblement magique des People of Neon a eu lieu pendant 2 week-ends. Les 21-22-23 juillet et 28-29-30 juillet, plus de 400 000 amis ont découvert "Amicorum Spectaculum". Un spectacle qu'on voit rarement, un rassemblement de talents qui vous a émerveillé.</p>
     </div>
 
   </div>
