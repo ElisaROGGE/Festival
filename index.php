@@ -1,4 +1,5 @@
-<?php $message = "";
+<?php 
+$message = "";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
         include("../config/res-db.php");
         require("config/traitement-res.php");
@@ -30,6 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Neon Festival</title>
 </head>
 <body>
+    <!-- Page d'accueil -->
     <header>
         <video muted autoplay loop >
             <source src="img/vlc-record-2021-11-02-16h23m00s-Tomorrowland-Belgium-2019-_-Official-Aftermovie-.mp4" type="video/mp4">
@@ -46,6 +48,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p id="countdown"></p>
         </div>   
     </header>
+    <!-- Page de "line up" -->
     <section id="lineup">
         <h2 class="anim-h2">Line-up</h2>
         <div class="slider">
@@ -97,7 +100,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
     </section>
-    
+    <!-- Page de réservation -->
     <div id="reserv"> 
         <h2 class="anim-h2">Réservations</h2> 
         <div class="warning"><?php echo $message ?></div>
@@ -125,71 +128,73 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-row"><p>Vous pouvez prendre jusqu'à 5 places maximum</p></div>
         </form>
     </div>
+    <!-- Page de rétrospective des années précédentes -->
     <article id="retro">
-            <h2 class="anim-h2">Rétrospective</h2>
-            <section id="timeline">
+        <h2 class="anim-h2">Rétrospective</h2>
+    <section class="timeline">
   
-  <div class="tl-item">
-    
-    <div class="tl-bg" style="background-image: url(img/2020-000.jpg)"></div>
-    
-    <div class="tl-year">
-      <p class="f2 heading--sanSerif">2020</p>
+    <div class="tl-item">
+        
+        <div class="tl-bg" style="background-image: url(img/2020-000.jpg)"></div>
+        
+        <div class="tl-year">
+        <p class="f2 heading--sanSerif">2020</p>
+        </div>
+
+        <div class="tl-content">
+            <h1>Around the World</h1>
+            <p>Une année exceptionnelle et pleine de défis a appelé à de nouvelles aventures à explorer… Lors de l'annulation de Neon Festival Winter en France et de l'édition d'été en Belgique en raison du COVID-19, Neon Festival a fait un saut dans le merveilleux monde numérique. </p>
+        </div>
+
     </div>
 
-    <div class="tl-content">
-      <h1>Around the World</h1>
-      <p>Une année exceptionnelle et pleine de défis a appelé à de nouvelles aventures à explorer… Lors de l'annulation de Neon Festival Winter en France et de l'édition d'été en Belgique en raison du COVID-19, Neon Festival a fait un saut dans le merveilleux monde numérique. </p>
+    <div class="tl-item">
+        
+        <div class="tl-bg" style="background-image: url(img/2019-1.jpg)"></div>
+        
+        <div class="tl-year">
+            <p class="f2 heading--sanSerif">2019</p>
+        </div>
+
+        <div class="tl-content">
+            <h1 class="f3 text--accent ttu">The Book of Wisdom – The Return</h1>
+            <p>Après une première édition magique de Neon Festival à l'Alpe d'Huez (mars 2019), l'édition Célébration des 15 ans en Belgique a renoué avec l'une des histoires les plus mythiques jamais contées. </p>
+        </div>
+
     </div>
 
-  </div>
+    <div class="tl-item">
+        
+        <div class="tl-bg" style="background-image: url(img/2018-1.jpg)"></div>
+        
+        <div class="tl-year">
+            <p class="f2 heading--sanSerif">2018</p>
+        </div>
 
-  <div class="tl-item">
-    
-    <div class="tl-bg" style="background-image: url(img/2019-1.jpg)"></div>
-    
-    <div class="tl-year">
-      <p class="f2 heading--sanSerif">2019</p>
+        <div class="tl-content">
+            <h1 class="f3 text--accent ttu">The Story of Planaxis</h1>
+            <p> Plongez dans un conte merveilleux et nouveau : L'histoire de Planaxis. Avec 400 000 People of Tomorrow, deux week-ends merveilleux et ensoleillés ont marqué l'été 2018 comme magique. Nous sommes revenus dans le monde d'en haut et avons rempli nos cœurs de beaux souvenirs.</p>
+        </div>
+
     </div>
 
-    <div class="tl-content">
-      <h1 class="f3 text--accent ttu">The Book of Wisdom – The Return</h1>
-      <p>Après une première édition magique de Neon Festival à l'Alpe d'Huez (mars 2019), l'édition Célébration des 15 ans en Belgique a renoué avec l'une des histoires les plus mythiques jamais contées. </p>
+    <div class="tl-item">
+        
+        <div class="tl-bg" style="background-image: url(img/2017-1.jpg)"></div>
+        
+        <div class="tl-year">
+            <p class="f2 heading--sanSerif">2017</p>
+        </div>
+
+        <div class="tl-content">
+            <h1 class="f3 text--accent ttu">Amicorum Spectaculum</h1>
+            <p>En 2017 un rassemblement magique des People of Neon a eu lieu pendant 2 week-ends. Les 21-22-23 juillet et 28-29-30 juillet, plus de 400 000 amis ont découvert "Amicorum Spectaculum". Un spectacle qu'on voit rarement, un rassemblement de talents qui vous a émerveillé.</p>
+        </div>
+
     </div>
-
-  </div>
-
-  <div class="tl-item">
-    
-    <div class="tl-bg" style="background-image: url(img/2018-1.jpg)"></div>
-    
-    <div class="tl-year">
-      <p class="f2 heading--sanSerif">2018</p>
-    </div>
-
-    <div class="tl-content">
-      <h1 class="f3 text--accent ttu">The Story of Planaxis</h1>
-      <p> Plongez dans un conte merveilleux et nouveau : L'histoire de Planaxis. Avec 400 000 People of Tomorrow, deux week-ends merveilleux et ensoleillés ont marqué l'été 2018 comme magique. Nous sommes revenus dans le monde d'en haut et avons rempli nos cœurs de beaux souvenirs.</p>
-    </div>
-
-  </div>
-
-  <div class="tl-item">
-    
-    <div class="tl-bg" style="background-image: url(img/2017-1.jpg)"></div>
-    
-    <div class="tl-year">
-      <p class="f2 heading--sanSerif">2017</p>
-    </div>
-
-    <div class="tl-content">
-      <h1 class="f3 text--accent ttu">Amicorum Spectaculum</h1>
-      <p>En 2017 un rassemblement magique des People of Neon a eu lieu pendant 2 week-ends. Les 21-22-23 juillet et 28-29-30 juillet, plus de 400 000 amis ont découvert "Amicorum Spectaculum". Un spectacle qu'on voit rarement, un rassemblement de talents qui vous a émerveillé.</p>
-    </div>
-
-  </div>
-</section>
+    </section>
     </article>
+    <!-- Bas de page -->
     <footer>
         <div class="contact">
             <h2 class="anim-h2">Rejoignez-nous !</h2><br>

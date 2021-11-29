@@ -31,6 +31,7 @@ var x = setInterval(function() {
     document.querySelector("#countdown").innerHTML = "EXPIRED";
   }
 }, 1000);
+
 //Responsive timeline
 function mediashow(){
   var show = document.getElementsByClassName("tl-item");

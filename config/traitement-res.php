@@ -1,5 +1,5 @@
 <?php 
-// include("config/res-db.php");
+// Affichages d'erreur sur le formulaire
 $jour = "";
 $date = ["vendredi", "samedi","dimanche"];
 $nom = "";

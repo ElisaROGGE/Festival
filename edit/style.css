@@ -15,7 +15,9 @@ body{
     margin: 0;
     background: var(--clr-bg); 
     font-family: 'Balsamiq Sans', cursive;
+    overflow-x: hidden;
 }
+/* Page d'accueil */
 header{
     margin-top: 10px;
     height: 100vh;
@@ -103,9 +105,8 @@ header .nav a:hover::before, header .nav a:focus::before {
 header .nav a:hover::after, header .nav a:focus::after {
   opacity: 1;
 }
+/* Animation sur les titres */
 .anim-h2{
-        /* animation: color-change 5s infinite; */
-        /*color: #ee6352;*/
         background-image:var(--gradient);
         background-clip: text;
         -webkit-background-clip: text;
@@ -116,6 +117,7 @@ header .nav a:hover::after, header .nav a:focus::after {
 .anim-h2:hover{
     background-position: right;
 }
+/* Page de "line up" */
 #lineup{
     overflow: hidden;
     color: white;
@@ -187,6 +189,7 @@ header .nav a:hover::after, header .nav a:focus::after {
     opacity: 0.5s;
     z-index: 1;
 }
+/* Boutons de navigation */
 .navigation-manual{
     position: absolute;
     width: 100%;
@@ -253,7 +256,7 @@ header .nav a:hover::after, header .nav a:focus::after {
     background-color: white;
 }
 
-/* Réservations*/
+/* Page réservations*/
 #reserv{
     color: black;
     height: 100vh;
@@ -324,13 +327,14 @@ form input[type = submit]:hover{
     background: rgb(0, 139, 0);
     color: rgb(116, 255, 116);
 }
-#timeline {
+.timeline {
     display: flex;
     background-color: #031625;
 }
-#timeline:hover .tl-item{
+.timeline:hover .tl-item{
     width: 23.3333%;
 }
+/* Page rétrospective des années précédentes */
 #retro h2{
     text-align: center;
     font-size: 3em;
@@ -417,12 +421,11 @@ form input[type = submit]:hover{
     background-position: center center;
     transition: filter 0.5s ease;
     object-fit: cover;
-    /* filter: grayscale(100%); */
 }
 .tl-bg:hover{
     filter: grayscale(20%);
 }
-
+/* Bas de page */
 footer{
     background-color: rgb(68, 18, 18);
     color: #eee;
@@ -511,7 +514,7 @@ footer .disclaimer{
     #reserv h2{
         margin: 5% 0;
     }
-    #timeline{
+    .timeline{
         display: flex;
         flex-direction: column;
     }
@@ -519,7 +522,7 @@ footer .disclaimer{
         height: 25%;
         width: 100%;
     }
-    #timeline:hover .tl-item{
+    .timeline:hover .tl-item{
         width: 100% !important;
     }
     .show{
