@@ -1,7 +1,7 @@
 <?php 
 $message = "";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-        include("../config/res-db.php");
+        include("config/res-db.php");
         require("config/traitement-res.php");
         if ($verify){
         $reserv = new Reservation();
